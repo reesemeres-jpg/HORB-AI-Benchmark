@@ -69,7 +69,7 @@ Key files include:
 
 The full benchmark set is included as a downloadable zip file:
 
-`HORB_v1_0_12_Benchmark_Package.zip`
+[`HORB_v1_0_12_Benchmark_Package.zip`](HORB_v1_0_12_Benchmark_Package.zip)
 
 The package contains all 12 benchmark folders. Each benchmark includes:
 
