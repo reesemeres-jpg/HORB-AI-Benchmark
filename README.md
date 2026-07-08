@@ -140,8 +140,8 @@ HORB reflects clinical nursing experience applied to healthcare AI evaluation, s
 
 ## Citation
 
-See `CITATION.md` for suggested citation format.
+See [`CITATION.md`](CITATION.md) for suggested citation format.
 
 ## License
 
-See `LICENSE.md` for reuse terms and limitations.
+See [`LICENSE.md`](LICENSE.md) for reuse terms and limitations.
