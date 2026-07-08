@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Healthcare Operational Reasoning Benchmark Suite</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <p class="eyebrow">Meredith Reese, RN</p>
+  <h1>Healthcare Operational Reasoning Benchmark Suite</h1>
+  <p class="subtitle">An original benchmark suite for evaluating AI operational reasoning across realistic healthcare workflows.</p>
+</header>
+<main>
+<section class="hero">
+  <h2>Central Evaluation Question</h2>
+  <blockquote>Can an AI distinguish apparent operational readiness from actual executable readiness?</blockquote>
+</section>
+<section>
+  <h2>About the Project</h2>
+  <p>This project contains 12 original healthcare operational reasoning benchmarks. Each benchmark uses fictional source documents, system instructions, prompts, and grading guidelines to evaluate operational judgment under uncertainty.</p>
+</section>
+<section>
+  <h2>Benchmark Suite</h2>
+  <div class="grid"><article class="card"><h3>HORB-001</h3><h2>Labor & Delivery Charge Nurse / OB Triage Flow</h2><p><strong>Labor & Delivery Operations</strong></p><p>Evaluates whether an AI system can coordinate a Labor & Delivery flow window involving OB triage arrivals, labor-room admissions, postpartum transfers, scheduled inductions, possible urgent C-section evaluation, fetal monitoring changes, anesthesia coverage, Mother-Baby capacity, transport limits, medication readiness, and OR readiness.</p><p class="tag">Operational reasoning under uncertainty in a multidisciplinary obstetric workflow</p></article>
+<article class="card"><h3>HORB-002</h3><h2>Sterile Processing / OR Case-Cart Readiness Flow</h2><p><strong>Sterile Processing and Perioperative Operations</strong></p><p>Evaluates whether an AI system can reason through case-cart release decisions involving sterilizer cycle status, biological indicators, loaner/vendor documentation, preference-card changes, instrument counts, scope reprocessing, missing instruments, partial carts, runner availability, and OR communication.</p><p class="tag">Operational readiness reasoning for sterile processing and OR case-cart release</p></article>
+<article class="card"><h3>HORB-003</h3><h2>Home Health Visit Coordination / Field Nursing Route</h2><p><strong>Home Health Operations</strong></p><p>Evaluates whether an AI system can coordinate home health visit routing while balancing start-of-care readiness, wound VAC supply and order issues, urgent medication-safety messages, field nurse and LPN scope, access problems, caregiver availability, DME delivery, time-sensitive labs, route geography, and limited office-call capacity.</p><p class="tag">Field-route operational reasoning under uncertainty</p></article>
+<article class="card"><h3>HORB-004</h3><h2>Outpatient Infusion Center / Oncology Treatment Readiness</h2><p><strong>Outpatient Infusion and Oncology Operations</strong></p><p>Evaluates whether an AI system can coordinate an outpatient infusion readiness window involving chemotherapy and biologic treatment readiness, lab parameters, pharmacy compounding, prior authorization, blood product compatibility, port access, chair capacity, nurse assignments, and patient communication.</p><p class="tag">Treatment-readiness reasoning across pharmacy, nursing, authorization, and chair capacity constraints</p></article>
+<article class="card"><h3>HORB-005</h3><h2>Hospice On-Call / Symptom Crisis & Visit Routing</h2><p><strong>Hospice Operations</strong></p><p>Evaluates whether an AI system can coordinate hospice on-call routing while balancing symptom crisis calls, comfort-kit readiness, medication order ownership, DME/oxygen status, caregiver availability, nurse visit capacity, after-hours escalation, and realistic visit routing.</p><p class="tag">Hospice visit-routing and symptom-crisis operational reasoning</p></article>
+<article class="card"><h3>HORB-006</h3><h2>Emergency Department Triage / Room Assignment & Ambulance Offload Flow</h2><p><strong>Emergency Department Operations</strong></p><p>Evaluates whether an AI system can coordinate ED triage and room assignment while balancing patient acuity, room suitability, ambulance offload, nurse/tech coverage, safety risks, isolation, monitoring needs, and evolving waiting-room information.</p><p class="tag">Emergency Department operational prioritization and room-assignment reasoning</p></article>
+<article class="card"><h3>HORB-007</h3><h2>Perioperative OR Add-On / Turnover Flow</h2><p><strong>Perioperative Operations</strong></p><p>Evaluates whether an AI system can coordinate perioperative add-on and turnover flow involving OR room status, case urgency, anesthesia coverage, PACU capacity, instrumentation, patient readiness, vendor/equipment needs, transport, and short-window huddle preparation.</p><p class="tag">OR add-on sequencing and turnover operational reasoning</p></article>
+<article class="card"><h3>HORB-008</h3><h2>Behavioral Health Crisis Unit / Psychiatric Intake & Safety Placement</h2><p><strong>Behavioral Health Operations</strong></p><p>Evaluates whether an AI system can coordinate behavioral health intake and placement while balancing legal status, medical clearance, contraband/security search, observation level, sitter coverage, room safety, unit acceptance, transportation, and evolving patient behavior.</p><p class="tag">Psychiatric intake placement reasoning with safety, legal, and staffing constraints</p></article>
+<article class="card"><h3>HORB-009</h3><h2>Hospital Pharmacy / Medication Reconciliation & Discharge Readiness</h2><p><strong>Hospital Pharmacy and Transitions of Care</strong></p><p>Evaluates whether an AI system can coordinate transitions-of-care medication readiness while balancing discharge orders, pharmacist verification, renal dosing, duplicate therapies, anticoagulation, insulin, counseling, interpreter needs, prior authorization, meds-to-beds, and discharge timing.</p><p class="tag">Medication reconciliation and discharge-readiness operational reasoning</p></article>
+<article class="card"><h3>HORB-010</h3><h2>Hospital Case Management / Discharge Disposition & Throughput</h2><p><strong>Case Management and Discharge Planning</strong></p><p>Evaluates whether an AI system can coordinate case management discharge planning while balancing discharge orders, SNF or facility acceptance, payer authorization, PASRR/level-of-care requirements, DME, home oxygen, dialysis, wound VAC, caregiver readiness, transport, discharge lounge capacity, and family communication.</p><p class="tag">Discharge disposition and throughput operational reasoning</p></article>
+<article class="card"><h3>HORB-011</h3><h2>Perioperative Pre-Admission Testing / Day-of-Surgery Clearance</h2><p><strong>Perioperative Pre-Admission Testing</strong></p><p>Evaluates whether an AI system can coordinate pre-admission testing and next-day surgical readiness while balancing anesthesia clearance, anticoagulant holds, GLP-1/NPO updates, respiratory symptoms, abnormal labs, cardiac clearance, interpreter/consent needs, OSA/CPAP recovery planning, vendor/implant readiness, callbacks, and OR schedule preservation.</p><p class="tag">Surgical readiness and cancellation-prevention operational reasoning</p></article>
+<article class="card"><h3>HORB-012</h3><h2>Primary Care Same-Day Triage / Schedule Routing Flow</h2><p><strong>Primary Care Operations</strong></p><p>Evaluates whether an AI system can coordinate primary care same-day triage and routing while balancing appointment requests, nurse-visit slots, telehealth holds, parking-lot symptoms, portal updates, voicemail symptoms, pediatric calls, allergic-reaction screening, interpreter needs, provider slot capacity, front desk routing, and emergency escalation decisions.</p><p class="tag">Ambulatory triage and schedule-routing operational reasoning</p></article>
+</div>
+</section>
+<section>
+  <h2>Design Philosophy</h2>
+  <p>Healthcare operations reward appropriate restraint as much as decisive action. This suite evaluates executable reasoning rather than confident completion.</p>
+</section>
+</main>
+<footer>
+  <p>Healthcare Operational Reasoning Benchmark Suite v1.0 • Meredith Reese, RN</p>
+</footer>
+</body>
+</html>

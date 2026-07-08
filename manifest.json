@@ -1,0 +1,103 @@
+{
+  "project": "Healthcare Operational Reasoning Benchmark Suite",
+  "version": "1.0",
+  "author": "Meredith Reese, RN",
+  "benchmarks": [
+    {
+      "id": "HORB-001",
+      "title": "Labor & Delivery Charge Nurse / OB Triage Flow",
+      "domain": "Labor & Delivery Operations",
+      "original_submission": "019",
+      "operational_window": "5:30 PM to 5:45 PM",
+      "source_document_count": 28
+    },
+    {
+      "id": "HORB-002",
+      "title": "Sterile Processing / OR Case-Cart Readiness Flow",
+      "domain": "Sterile Processing and Perioperative Operations",
+      "original_submission": "020",
+      "operational_window": "1:10 PM to 1:15 PM",
+      "source_document_count": 28
+    },
+    {
+      "id": "HORB-003",
+      "title": "Home Health Visit Coordination / Field Nursing Route",
+      "domain": "Home Health Operations",
+      "original_submission": "021",
+      "operational_window": "12:30 PM to 12:45 PM",
+      "source_document_count": 28
+    },
+    {
+      "id": "HORB-004",
+      "title": "Outpatient Infusion Center / Oncology Treatment Readiness",
+      "domain": "Outpatient Infusion and Oncology Operations",
+      "original_submission": "022",
+      "operational_window": "8:30 AM to 8:45 AM",
+      "source_document_count": 28
+    },
+    {
+      "id": "HORB-005",
+      "title": "Hospice On-Call / Symptom Crisis & Visit Routing",
+      "domain": "Hospice Operations",
+      "original_submission": "023",
+      "operational_window": "4:10 PM to 4:15 PM",
+      "source_document_count": 28
+    },
+    {
+      "id": "HORB-006",
+      "title": "Emergency Department Triage / Room Assignment & Ambulance Offload Flow",
+      "domain": "Emergency Department Operations",
+      "original_submission": "024",
+      "operational_window": "6:12 PM to 6:25 PM",
+      "source_document_count": 28
+    },
+    {
+      "id": "HORB-007",
+      "title": "Perioperative OR Add-On / Turnover Flow",
+      "domain": "Perioperative Operations",
+      "original_submission": "025",
+      "operational_window": "2:14 PM to 2:20 PM",
+      "source_document_count": 28
+    },
+    {
+      "id": "HORB-008",
+      "title": "Behavioral Health Crisis Unit / Psychiatric Intake & Safety Placement",
+      "domain": "Behavioral Health Operations",
+      "original_submission": "026",
+      "operational_window": "7:14 PM to 7:30 PM",
+      "source_document_count": 28
+    },
+    {
+      "id": "HORB-009",
+      "title": "Hospital Pharmacy / Medication Reconciliation & Discharge Readiness",
+      "domain": "Hospital Pharmacy and Transitions of Care",
+      "original_submission": "027",
+      "operational_window": "9:30 AM to 9:45 AM",
+      "source_document_count": 28
+    },
+    {
+      "id": "HORB-010",
+      "title": "Hospital Case Management / Discharge Disposition & Throughput",
+      "domain": "Case Management and Discharge Planning",
+      "original_submission": "028",
+      "operational_window": "11:30 AM to 11:45 AM",
+      "source_document_count": 28
+    },
+    {
+      "id": "HORB-011",
+      "title": "Perioperative Pre-Admission Testing / Day-of-Surgery Clearance",
+      "domain": "Perioperative Pre-Admission Testing",
+      "original_submission": "029",
+      "operational_window": "3:10 PM to 3:20 PM",
+      "source_document_count": 28
+    },
+    {
+      "id": "HORB-012",
+      "title": "Primary Care Same-Day Triage / Schedule Routing Flow",
+      "domain": "Primary Care Operations",
+      "original_submission": "030",
+      "operational_window": "1:18 PM to 1:30 PM",
+      "source_document_count": 28
+    }
+  ]
+}
