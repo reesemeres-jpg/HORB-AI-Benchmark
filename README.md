@@ -4,30 +4,39 @@
 **Author:** Meredith Reese, RN  
 **Status:** Initial public portfolio release  
 
-HORB is an original healthcare AI benchmark suite designed to evaluate operational reasoning across realistic healthcare workflows.
+> HORB is an original healthcare AI benchmark suite for evaluating operational reasoning, workflow judgment, and executable decision-making across realistic healthcare settings.
 
-The project focuses on whether AI systems can distinguish **apparent operational readiness** from **actual executable readiness** when working with complex, multi-document healthcare scenarios.
+## Overview
 
-## Executive Summary
+Healthcare AI is increasingly being used in environments where safe and useful decisions depend on more than isolated medical facts. In real healthcare workflows, the correct next step often depends on timing, staffing, ownership boundaries, documentation quality, resource availability, and whether a task is actually executable.
 
-Healthcare AI is increasingly being used in environments where safe and useful decision-making depends on coordinating multiple evolving information sources rather than retrieving isolated facts.
+HORB was created to evaluate whether AI systems can reason through that kind of operational complexity.
 
-HORB evaluates whether AI systems can reason through realistic healthcare operations involving prioritization, workflow dependencies, ownership boundaries, temporal constraints, documentation quality, staffing limits, and resource availability.
-
-Rather than evaluating medical knowledge alone, HORB focuses on operational judgment in complex healthcare environments.
+Rather than testing medical knowledge alone, HORB focuses on whether a model can distinguish **apparent operational readiness** from **actual executable readiness**.
 
 ## Central Evaluation Question
 
-> Can an AI distinguish apparent operational readiness from actual executable readiness while making operationally sound decisions under realistic healthcare constraints?
+> **Can an AI distinguish apparent operational readiness from actual executable readiness while making operationally sound decisions under realistic healthcare constraints?**
 
 ## Project Highlights
 
-- 12 original healthcare operational reasoning benchmarks
-- 336 fictional healthcare operations source documents
-- Original system instructions, task prompts, design briefs, and grading rubrics
-- Focus on operational judgment under uncertainty
-- Cross-domain coverage across inpatient, ambulatory, perioperative, post-acute, behavioral health, pharmacy, and case management workflows
-- Fictional materials only; no PHI, real patient records, or confidential healthcare organization data
+- **12** original healthcare operational reasoning benchmarks
+- **336** fictional source documents
+- Realistic multi-document workflows across healthcare operations
+- Original system instructions, task prompts, grading guidelines, and design briefs
+- Focus on prioritization, uncertainty, workflow constraints, ownership boundaries, and source-grounded reasoning
+- Built from a nursing-informed perspective on real operational decision-making
+- No PHI, real patient records, or confidential healthcare organization data
+
+## Why HORB Exists
+
+Many AI benchmarks test factual recall, isolated reasoning, or cleanly structured tasks. Healthcare operations are different. Real workflows are messy, time-sensitive, and dependent on multiple evolving sources of information.
+
+A model may sound confident while still missing the practical question that matters most:
+
+**Can this action actually happen right now?**
+
+HORB is designed to surface those failure modes.
 
 ## Benchmark Domains
 
@@ -46,40 +55,49 @@ Rather than evaluating medical knowledge alone, HORB focuses on operational judg
 | HORB-011 | Perioperative Pre-Admission Testing | Perioperative Pre-Admission Testing / Day-of-Surgery Clearance |
 | HORB-012 | Primary Care Operations | Primary Care Same-Day Triage / Schedule Routing Flow |
 
-## Repository Contents
+## Repository Structure
 
-This repository includes the public portfolio release of HORB v1.0.
+```text
+HORB-AI-Benchmark/
+âââ README.md
+âââ LICENSE.md
+âââ CITATION.md
+âââ CHANGELOG.md
+âââ FILE_INDEX.md
+âââ docs/
+â   âââ Executive_Summary.md
+â   âââ Methodology.md
+â   âââ Benchmark_Overview.md
+â   âââ Common_Failure_Modes.md
+â   âââ Scope_and_Limitations.md
+â   âââ additional project documentation
+âââ portfolio/
+â   âââ Project_Summary.md
+â   âââ About_Meredith.md
+â   âââ Resume_Bullets.md
+âââ benchmarks/
+â   âââ HORB_v1_0_12_Benchmark_Package.zip
+â   âââ HORB-001_...
+â   âââ HORB-002_...
+â   âââ HORB-012_...
+âââ website/
+    âââ index.html
+    âââ style.css
+```
 
-Key files include:
+The full benchmark set may be included as a downloadable zip package and/or as browsable benchmark folders.
 
-- `Executive_Summary.md` — high-level project summary
-- `Project_Summary.md` — concise portfolio summary
-- `Methodology.md` — benchmark design and evaluation methodology
-- `Benchmark_Overview.md` — overview of the 12 benchmark domains
-- `Common_Failure_Modes.md` — model failure patterns HORB is designed to reveal
-- `Scope_and_Limitations.md` — project scope, limitations, and intended use
-- `Design_Philosophy.md` — principles behind the benchmark suite
-- `Why_Nursing_Matters.md` — how nursing experience informed the project
-- `CITATION.md` — suggested citation format
-- `LICENSE.md` — reuse terms and limitations
-- `FILE_INDEX.md` — index of the full benchmark package contents
-- `HORB_v1_0_12_Benchmark_Package.zip` — downloadable package containing the 12 benchmark scenarios
+## What Each Benchmark Includes
 
-## 12-Benchmark Package
+Each HORB benchmark includes:
 
-The full benchmark set is included as a downloadable zip file:
-
-`HORB_v1_0_12_Benchmark_Package.zip`
-
-The package contains all 12 benchmark folders. Each benchmark includes:
-
-- `00_Design_Brief.md` — benchmark summary and design rationale
-- `UseCase_System_Prompt.md` — use case, system instructions, and task prompt
-- `Strict_Grading_Guidelines.md` — scoring and evaluation criteria
-- `source_docs/` — fictional operational source documents
-- `SourceDocs.zip` — archived source document package
-- `Source_Documents_Manifest.md` — list of source documents
-- `original_batches/` — original batch archives where available
+- `00_Design_Brief.md` â benchmark summary and design rationale
+- `UseCase_System_Prompt.md` â use case, system instructions, and task prompt
+- `Strict_Grading_Guidelines.md` â scoring and evaluation criteria
+- `source_docs/` â fictional operational source documents
+- `SourceDocs.zip` â archived source document package
+- `Source_Documents_Manifest.md` â source document list
+- `original_batches/` â original batch archives where available
 
 ## Core Capabilities Evaluated
 
@@ -108,9 +126,7 @@ HORB is designed to reveal failures such as:
 
 ## Design Philosophy
 
-Healthcare operations reward appropriate restraint as much as decisive action.
-
-A high-quality operational plan does not simply identify what could happen next. It identifies what can actually happen next based on confirmed information, available resources, realistic workflow, and appropriate ownership.
+Healthcare operations reward appropriate restraint as much as decisive action. A high-quality operational plan does not simply identify what could happen next; it identifies what can actually happen next based on confirmed information, available resources, realistic workflow, and appropriate ownership.
 
 HORB evaluates **executable reasoning**, not confident completion.
 
@@ -126,6 +142,17 @@ HORB may be useful for:
 - Clinical documentation and operational QA portfolio work
 - Demonstrating healthcare domain expertise in AI evaluation roles
 
+## Documentation
+
+Key supporting documents include:
+
+- [`docs/Executive_Summary.md`](docs/Executive_Summary.md)
+- [`docs/Methodology.md`](docs/Methodology.md)
+- [`docs/Benchmark_Overview.md`](docs/Benchmark_Overview.md)
+- [`docs/Common_Failure_Modes.md`](docs/Common_Failure_Modes.md)
+- [`docs/Scope_and_Limitations.md`](docs/Scope_and_Limitations.md)
+- [`portfolio/Project_Summary.md`](portfolio/Project_Summary.md)
+
 ## Scope and Disclaimer
 
 All benchmark materials are fictional and were created for evaluation and portfolio purposes. No real patient information, health records, or healthcare organization data are included.
@@ -140,8 +167,8 @@ HORB reflects clinical nursing experience applied to healthcare AI evaluation, s
 
 ## Citation
 
-See `CITATION.md` for suggested citation format.
+See [`CITATION.md`](CITATION.md) for suggested citation format.
 
 ## License
 
-See `LICENSE.md` for reuse terms and limitations.
+See [`LICENSE.md`](LICENSE.md) for reuse terms and limitations.
